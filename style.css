@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    min-width: 50rem;
+    height: 45rem;
+    background-color: rgba(77,139,200,255);
+    margin: 4rem auto 0 auto;
+}
+.calculator{
+    border-radius: 25px;
+    width: 30rem;
+    min-width: 30rem;
+    height: 38rem;
+    background-color: #ebf5fe;
+}
+.screen{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    gap: 2.2rem;
+    height: 7rem;
+    border-radius: 10px;
+    background-color: #cbe5fd;
+    margin: 3rem auto 0 auto;
+    padding: 0;
+}
+.first-keys{
+   width: 90%;
+   margin: 1rem auto 0 auto;
+   display: grid;
+   grid-template-columns: 4.3rem 4.3rem 4.3rem 4.3rem 4.3rem;
+   gap: 1.3rem;
+   grid-row: 1;
+   height: 3.5rem;
+}
+.first-keys > button{
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    width: 4.5rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.second-keys{
+    width: 90%;
+    margin: 1.2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 4.3rem 4.3rem 4.3rem 4.3rem 4.3rem;
+    gap: 1.3rem;
+    height: 15rem;
+}
+.second-keys > button{
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 4.1rem;
+    width: 4.5rem;
+}
+.last-keys{
+    display: grid;
+    width: 90%;
+    margin: 1rem auto 0 auto;
+    grid-template-columns: 4.3rem 4.3rem 4.3rem 8.6rem;
+    grid-template-columns: 1;
+    gap: 1.3rem;
+}
+.last-keys > button{
+    height: 4.1rem;
+    width: 4.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#enter-key{
+    width: 10rem;
+    background-color: #4d8bc8;
+    color: #e0f2fc;
+}
+.symbols-cmd{
+    background-color: #a3d0fa;
+    color: #488ac9;
+}
+.digits{
+    background-color: #cbe5fd;
+    color: #1a3c62;
+}
+
+.default{
+    width: 98.5%;
+    border: none;
+    height: 5rem;
+    color: #113b5c;
+    background-color: #cbe5fd;
+    font-size: 25px;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+.with-result{
+    align-self: flex-start;
+    height: 1.3rem;
+    color: #488ac9;
+    background-color: #cbe5fd;
+    margin: 0;
+    font-size: 14px;
+    width: 98.5%;
+    border: none;
+}
+.screen > input:focus{
+    border: none;
+}
+
+.result{
+    align-self: flex-end;
+    text-align: right;
+    display: block;
+    margin: 0 10px 0 0;
+    white-space: nowrap;
+    min-width: 5rem;
+    font-size: 30px;
+    height: 3rem;
+    color: #113b5c;
+}
+.no-result{
+    display: none;
+}

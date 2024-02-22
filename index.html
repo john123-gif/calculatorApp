@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator App</title>
+</head>
+<body>
+    <div class="background">
+        <div class="calculator">
+            <div class="screen">
+                <span class="no-result" id="show-result"></span>
+                <input type="text" id="input" class="default" readonly>
+            </div>
+
+            <div class="first-keys">
+               <button class="symbols-cmd key" data-value="(">(</button>
+               <button class="symbols-cmd key" data-value=")">)</button>
+               <button class="symbols-cmd key" data-value="ans">ans</button>
+               <button class="symbols-cmd key" data-value="del">del</button>
+               <button class="symbols-cmd key" data-value="clear">clear</button>
+            </div>
+            <div class="second-keys">
+                <button class="digits key" data-value="7">7</button>
+                <button class="digits key" data-value="8">8</button>
+                <button class="digits key" data-value="9" value="9">9</button>
+                <button class="symbols-cmd key" data-value="%">%</button>
+                <button class="symbols-cmd key" data-value="√">√</button>
+                <button class="digits key" data-value="4">4</button>
+                <button class="digits key" data-value="5">5</button>
+                <button class="digits key" data-value="6">6</button>
+                <button class="symbols-cmd key" data-value="x">x</button>
+                <button class="symbols-cmd key" data-value="÷">÷</button>
+                <button class="digits key" data-value="1">1</button>
+                <button class="digits key" data-value="2">2</button>
+                <button class="digits key" data-value="3">3</button>
+                <button class="symbols-cmd key" data-value="+">+</button>
+                <button class="symbols-cmd key" data-value="-">-</button>
+            </div>
+            <div class="last-keys">
+                <button class="symbols-cmd key" data-value=".">.</button>
+                <button class="digits key" data-value="0">0</button>
+                <button class="symbols-cmd key" data-value="±">±</button>
+                <button id="enter-key" class="key" data-value="enter">Enter</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculations.js"></script>
+</body>
+</html>
